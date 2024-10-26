@@ -1,68 +1,89 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
 }
-a:hover {
-  color: #535bf2;
+.space-between-links a + a {
+  margin-left: 3rem; 
+}
+ 
+.pb{
+ 
+  font-family: 'Inter', serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  height: 16px;
+  line-height: 16px;
+  left: -2rem; 
+  top: 7px;
+ }
+
+ .logo{
+width: 25%
 }
 
-body {
-  margin: 0;
+.mm-l{
+  margin-left: 1.2rem;
+}
+
+.social-links{
+  font-size: 1.4rem;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: space-evenly;
+  width: 100%;
+  
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+
+.social-links a :hover {
+  color: rgb(40, 82, 173);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.i {
+  color: red;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.ftr-info {
+  list-style-type: none;
+  padding-left: 0;
+  
+
+}
+.cs{
+  height: 2rem;
+  font-size: 1.2rem !important;
+  font-weight: 600;
+}
+.tb{
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.ftr2 p{
+  font-size: 0.6rem;
+  font-weight: 600;
+  opacity: 0.4;
+  
+}
+.ftr2  a{
+  text-decoration: none;
+  font-size: 0.6rem;
+  font-weight: 600;
+  opacity: 0.8 !important;
+}
+.muted-text {
+  color: #2b323898; 
+  font-size: 0.9em;
+}
+.clr{
+  color: #221d1dec !important;
 }
