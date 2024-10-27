@@ -1,4 +1,5 @@
 import React from "react";
+import { company_name } from "./home/features";
 
 
 
@@ -10,7 +11,7 @@ function OpenAccount() {
     return(
         <div className="container mt-5">
             <div className="text-center">
-            <h1>Open a Zerodha account</h1>
+            <h1>Open a {company_name} account</h1>
                     <p className="text-muted">
                     Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&O trades.
                     </p>

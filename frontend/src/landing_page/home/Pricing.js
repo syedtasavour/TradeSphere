@@ -1,5 +1,5 @@
 import React from "react";
-import {featuresImg} from "./features";
+import {featuresImg ,company_icon} from "./features";
 
 
 function Pricing() {
@@ -13,7 +13,7 @@ function Pricing() {
             in India. Flat fees and no hidden charges.
           </p>
           <a href="#" className="fw-bold text-decoration-none">
-            See Pricing <i className="fa-solid fa-arrow-right"></i>
+            See Pricing {company_icon}
           </a>
         </div>
         <div className="col-6">

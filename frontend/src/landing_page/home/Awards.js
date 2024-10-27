@@ -1,4 +1,5 @@
 import React from "react";
+import { company_name } from "./features";
 
 function Awards() {
   return (
@@ -14,7 +15,7 @@ function Awards() {
         <div className="col-lg-6 col-md-12">
           <h1 className="text-center text-lg-start">Largest Stock Broker in India</h1>
           <p className="text-center text-lg-start">
-            Over 2 million TradeSphere clients contribute to more than 15% of
+            Over 2 million {company_name} clients contribute to more than 15% of
             all retail order volumes in India daily by trading and investing
             in:
           </p>

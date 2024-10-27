@@ -47,6 +47,11 @@ width: 25%
   color: rgb(40, 82, 173);
 }
 
+.abt_pp i:hover {
+  color: rgb(40, 82, 173);
+}
+
+
 .i {
   color: red;
 }
@@ -86,4 +91,32 @@ width: 25%
 }
 .clr{
   color: #221d1dec !important;
+}
+.not-found-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.not-found-title {
+  font-size: 72px;
+  margin-bottom: 20px;
+}
+
+.not-found-message {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.not-found-link {
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.not-found-link:hover {
+  text-decoration: underline;
+}
+
+.fs-small {
+  font-size: 0.7rem;
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import { statsData } from "./features";
-
+import { Link } from "react-router-dom";
+import { statsData ,company_icon } from "./features";
 
 function Stats() {
   return (
@@ -8,7 +8,7 @@ function Stats() {
       <div className="row">
         <div className="col-6">
           <h1 className="text-muted clr mb-4 fw-normal">Trust with confidence</h1>
-          <div className="">
+          <div>
             {statsData.map((stat, index) => (
               <div key={index} className={`stat-${index}`}>
                 <p className="h4 clr">{stat.title}</p>
@@ -25,12 +25,12 @@ function Stats() {
             className="img-fluid w-100"
           />
           <div className="text-center space-between-links">
-            <a href="#" className="fw-normal mr-5 text-decoration-none">
-              Explore our products <i className="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="#" className="fw-normal text-decoration-none">
-              Try Kite demo <i className="fa-solid fa-arrow-right"></i>
-            </a>
+            <Link to="/products" className="fw-normal mr-5 text-decoration-none">
+              Explore our products {company_icon}
+            </Link>
+            <Link to="/kite-demo" className="fw-normal text-decoration-none">
+              Try Kite demo {company_icon}
+            </Link>
           </div>
         </div>
       </div>
