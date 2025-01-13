@@ -27,7 +27,7 @@ code {
  }
 
  .logo{
-width: 25%
+width: 25%;
 }
 
 .mm-l{
@@ -119,4 +119,37 @@ width: 25%
 
 .fs-small {
   font-size: 0.7rem;
+}
+
+
+
+.custom-table th, .custom-table td {
+  
+  padding: 10px;
+  text-align: left;
+}
+.custom-table th , .custom-table table {
+  border: 0.1px solid rgba(87, 92, 85, 0.192);
+}
+
+.custom-row{
+  background-color:rgba(71, 71, 71, 0.315) ;
+}
+.shc {
+  background-color: #387ED1; 
+  color: #ffffff;
+}
+#supportWrpper{
+  display: flex;
+  justify-content: space-between;
+}
+.supportHeroA a{
+  color: #ffffff;
+  margin-right: 15px;
+}
+.supportHeroA input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
 }
