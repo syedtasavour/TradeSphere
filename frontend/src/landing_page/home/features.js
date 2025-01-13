@@ -37,8 +37,7 @@ export const featuresImg = [
 export const statsData = [
   {
     title: "Customer-first always",
-    description:
-      `That's why 1.5+ crore customers trust ${company_name} with ₹4.5+ lakh crores of equity investments and contribute to 15% of daily retail exchange volumes in India.`,
+    description: `That's why 1.5+ crore customers trust ${company_name} with ₹4.5+ lakh crores of equity investments and contribute to 15% of daily retail exchange volumes in India.`,
   },
   {
     title: "No spam or gimmicks",
@@ -171,15 +170,16 @@ export const ftr_info2 = [
   {
     text: (
       <p>
-        {company_name} Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI Registration
-        no.: 00000000000 CDSL/NSDL: Depository services through {company_name}
+        {company_name} Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI
+        Registration no.: 00000000000 CDSL/NSDL: Depository services through{" "}
+        {company_name}
         Broking Ltd. – SEBI Registration no.: 00000000 Commodity Trading through
         {company_name} Commodities Pvt. Ltd. MCX: 46025; NSE-50001 – SEBI
         Registration no.: 00000000000 Registered Address: {company_name} Broking
         Ltd., #000/000, fake ad. For any complaints pertaining to securities
         broking please write to complaints@{company_name}.com, for DP related to
-        dp@{company_name}.com. Please ensure you carefully read the Risk Disclosure
-        Document as prescribed by SEBI | ICF
+        dp@{company_name}.com. Please ensure you carefully read the Risk
+        Disclosure Document as prescribed by SEBI | ICF
       </p>
     ),
   },
@@ -238,8 +238,8 @@ export const ftr_info2 = [
         allotment. In case of non-allotment, the funds will remain in your bank
         account. As a business, we don't give stock tips and have not authorized
         anyone to trade on behalf of others. If you find anyone claiming to be
-        part of {company_name} and offering such services, please create a ticket
-        here.
+        part of {company_name} and offering such services, please create a
+        ticket here.
       </p>
     ),
   },
@@ -384,8 +384,9 @@ export const abt_hero_left = [
     body5: (
       <p>
         <Link className="text-decoration-none" to="/">
-          {company_name }
-        </Link>, our fintech fund and incubator, has invested in several fintech
+          {company_name}
+        </Link>
+        , our fintech fund and incubator, has invested in several fintech
         startups with the goal of growing the Indian capital markets.
       </p>
     ),
@@ -395,5 +396,214 @@ export const abt_hero_left = [
         latest updates on our blog or see what the media is saying about us.
       </p>
     ),
+  },
+];
+
+export const pricing = [
+  {
+    imgSrc: "/media/images/pricing0.svg",
+    text: "Free equity delivery",
+    body: "All equity delivery investments (NSE, BSE), are absolutely free — ₹ 0 brokerage.",
+  },
+  {
+    imgSrc: "/media/images/pricingMF.svg",
+    text: "Intraday and F&O trades",
+    body: "Flat ₹ 20 or 0.03% (whichever is lower) per executed order on intraday trades across equity, currency, and commodity trades. Flat ₹20 on all option trades.",
+  },
+  {
+    imgSrc: "/media/images/pricingtwo.svg",
+    text: "Free direct MF",
+    body: "All direct mutual fund investments are absolutely free — ₹ 0 commissions & DP charges.",
+  },
+];
+
+export const chargesData = [
+  {
+    title: "Securities/Commodities Transaction Tax",
+    description: "Tax by the government when transacting on the exchanges. Charged as above on both buy and sell sides when trading equity delivery. Charged only on selling side when trading intraday or on F&O.",
+  },
+  {
+    title: "Transaction/Turnover Charges",
+    description: "Charged by exchanges (NSE, BSE, MCX) on the value of your transactions. BSE has revised transaction charges in various groups.",
+    details: [
+      "BSE has revised transaction charges in XC, XD, XT, Z and ZP groups to ₹10,000 per crore w.e.f 01.01.2016.",
+      "BSE has revised transaction charges in SS and ST groups to ₹1,00,000 per crore of gross turnover.",
+      "BSE has revised transaction charges for group A, B and other non-exclusive scrips at ₹375 per crore of turnover.",
+      "BSE has revised transaction charges in M, MT, TS and MS groups to ₹275 per crore of gross turnover.",
+    ],
+  },
+  {
+    title: "Call & Trade",
+    description: `Additional charges of ₹50 per order for orders placed through a dealer at ${company_name} including auto square-off orders.`,
+  },
+  {
+    title: "Stamp Charges",
+    description: "Stamp charges by the Government of India as per the Indian Stamp Act of 1899 for transacting in instruments on the stock exchanges and depositories.",
+  },
+  {
+    title: "NRI Brokerage Charges",
+    description: "₹100 per order for futures and options. For a non-PIS account, 0.5% or ₹100 per executed order for equity (whichever is lower).",
+    details: [
+      "For a PIS account, 0.5% or ₹200 per executed order for equity (whichever is lower).",
+      "₹500 + GST as yearly account maintenance charges (AMC).",
+    ],
+  },
+  {
+    title: "Charges for Investor's Protection Fund Trust (IPFT) by NSE",
+    description: "Equity and Futures - ₹10 per crore + GST of the traded value.",
+    details: [
+      "Options - ₹50 per crore + GST traded value (premium value).",
+      "Currency - ₹0.05 per lakh + GST of turnover for Futures and ₹2 per lakh + GST of premium for Options.",
+    ],
+  },
+  {
+    title: "GST",
+    description: "Tax levied by the government on the services rendered. 18% of (brokerage + SEBI charges + transaction charges).",
+  },
+  {
+    title: "SEBI Charges",
+    description: "Charged at ₹10 per crore + GST by Securities and Exchange Board of India for regulating the markets.",
+  },
+  {
+    title: "DP (Depository Participant) Charges",
+    description: "₹15.34 per scrip charged on the trading account ledger when stocks are sold, irrespective of quantity.",
+  },
+  {
+    title: "Pledging Charges",
+    description: "₹30 + GST per pledge request per ISIN.",
+  },
+  {
+    title: "AMC (Account Maintenance Charges)",
+    description: "For BSDA demat account: Zero charges if the holding value is less than ₹4,00,000.",
+    details: [
+      "For non-BSDA demat accounts: ₹300/year + 18% GST charged quarterly.",
+    ],
+  },
+  {
+    title: "Corporate Action Order Charges",
+    description: "₹20 plus GST will be charged for OFS / buyback / takeover / delisting orders placed through Console.",
+  },
+  {
+    title: "Off-Market Transfer Charges",
+    description: "₹25 or 0.03% of the transfer value (whichever is higher).",
+  },
+  {
+    title: "Physical CMR Request",
+    description: "First CMR request is free. ₹20 + ₹100 (courier charge) + 18% GST for subsequent requests.",
+  },
+  {
+    title: "Payment Gateway Charges",
+    description: "₹9 + GST (Not levied on transfers done via UPI).",
+  },
+  {
+    title: "Delayed Payment Charges",
+    description: "Interest is levied at 18% a year or 0.05% per day on the debit balance in your trading account.",
+  },
+  {
+    title: "Disclaimer",
+    description: "For delivery based trades, a minimum of ₹0.01 will be charged per contract note.",
+  },
+];
+
+export const ticket = [
+  {
+    text: "Free equity delivery",
+    body: "All equity delivery investments (NSE, BSE), are absolutely free — ₹ 0 brokerage.",
+  },
+  {
+    text: "Intraday and F&O trades",
+    body: "Flat ₹ 20 or 0.03% (whichever is lower) per executed order on intraday trades across equity, currency, and commodity trades. Flat ₹20 on all option trades.",
+  },
+  {
+    text: "Free direct MF",
+    body: "All direct mutual fund investments are absolutely free — ₹ 0 commissions & DP charges.",
+  },
+];
+
+
+export const data = [
+  {
+    title: "Account Opening",
+    ticon: <i className="fa-solid fa-plus"></i>,
+    links: [
+      { label: "Getting started", href: "/account-opening/getting-started" },
+      { label: "Online", href: "/account-opening/online" },
+      { label: "Offline", href: "/account-opening/offline" },
+      { label: "Charges", href: "/account-opening/charges" },
+      {
+        label: "Company, Partnership and HUF",
+        href: "/account-opening/company-partnership-huf",
+      },
+      { label: "Non Resident Indian (NRI)", href: "/account-opening/nri" },
+    ],
+  },
+  {
+    title: "Your Account",
+    ticon: <i className="fa-solid fa-user"></i>,
+    links: [
+      { label: "Login credentials", href: "/your-account/login-credentials" },
+      { label: "Your Profile", href: "/your-account/profile" },
+      {
+        label: "Account modification and segment addition",
+        href: "/your-account/account-modification",
+      },
+      { label: "CMR & DP ID", href: "/your-account/cmr-dp-id" },
+      { label: "Nomination", href: "/your-account/nomination" },
+      {
+        label: "Transfer and conversion of shares",
+        href: "/your-account/transfer-conversion",
+      },
+    ],
+  },
+  {
+    title: "Trading and Markets",
+    ticon: <i className="fa-solid fa-chart-line"></i>,
+    links: [
+      { label: "Trading FAQs", href: "/trading-markets/faqs" },
+      { label: "Kite", href: "/trading-markets/kite" },
+      { label: "Margins", href: "/trading-markets/margins" },
+      {
+        label: "Product and order types",
+        href: "/trading-markets/product-order-types",
+      },
+      { label: "Corporate actions", href: "/trading-markets/corporate-actions" },
+      { label: "Kite features", href: "/trading-markets/kite-features" },
+    ],
+  },
+  {
+    title: "Funds",
+    ticon: <i className="fa-solid fa-money-bill"></i>,
+    links: [
+      { label: "Fund withdrawal", href: "/funds/withdrawal" },
+      { label: "Adding funds", href: "/funds/adding" },
+      { label: "Adding bank accounts", href: "/funds/bank-accounts" },
+      { label: "eMandates", href: "/funds/emandates" },
+    ],
+  },
+  {
+    title: "Console",
+    ticon: <i className="fa-solid fa-columns"></i>,
+    links: [
+      { label: "IPO", href: "/console/ipo" },
+      { label: "Portfolio", href: "/console/portfolio" },
+      { label: "Funds statement", href: "/console/funds-statement" },
+      { label: "Profile", href: "/console/profile" },
+      { label: "Reports", href: "/console/reports" },
+      { label: "Referral program", href: "/console/referral" },
+    ],
+  },
+  {
+    title: "Coin",
+    ticon: <i className="fa-solid fa-coins"></i>,
+    links: [
+      {
+        label: "Understanding mutual funds and Coin",
+        href: "/coin/mutual-funds",
+      },
+      { label: "Coin app", href: "/coin/app" },
+      { label: "Coin web", href: "/coin/web" },
+      { label: "Transactions and reports", href: "/coin/transactions" },
+      { label: "National Pension Scheme (NPS)", href: "/coin/nps" },
+    ],
   },
 ];
