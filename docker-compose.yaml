@@ -1,0 +1,67 @@
+version: "3"
+services:
+  front:
+    build:
+      context: "./frontend"
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    container_name: react-front-container
+    environment:
+      - WATCHPACK_POLLING=true
+    networks:
+      - mern-network
+    volumes:
+      - ./frontend:/app
+    depends_on:
+      - backend
+
+  dashboard:
+    build:
+      context: "./dashboard"
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3000"
+    container_name: react-dashboard-container
+    environment:
+      - WATCHPACK_POLLING=true
+    networks:
+      - mern-network
+    volumes:
+      - ./dashboard:/app
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: "./backend"
+      dockerfile: Dockerfile
+    ports:
+      - "5500:5500"
+    container_name: backend-container
+    networks:
+      - mern-network
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    container_name: mongo-container
+    networks:
+      - mern-network
+    volumes:
+      - mongoData:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=ROOT
+      - MONGO_INITDB_ROOT_PASSWORD=ROOT
+      - MONGO_INITDB_DATABASE=trading
+
+networks:
+  mern-network:
+
+volumes:
+  mongoData:
