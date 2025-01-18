@@ -27,6 +27,13 @@ app.get("/allPositions", async (req, res) => {
     res.json(allPositions);
   });
 
+app.post('newOrder',async(req,res)=>{
+  let newOrder = new OrdersModel({});
+  newOrder.save();
+  res.send("Order Saved");
+
+});
+
 app.listen(PORT, () => {
   console.log("app started");
   mongoose.connect(URI);
