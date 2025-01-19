@@ -37,7 +37,7 @@ services:
       context: "./backend"
       dockerfile: Dockerfile
     ports:
-      - "5500:5500"
+      - "3002:3002"
     container_name: backend-container
     networks:
       - mern-network

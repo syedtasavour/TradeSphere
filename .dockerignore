@@ -1,0 +1,12 @@
+# Ignore OneDrive-related files
+*.tmp
+*.lnk
+*.ini
+*.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore node_modules (if not needed in the build context)
+node_modules
+npm-debug.log
+yarn-error.log
