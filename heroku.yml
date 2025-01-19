@@ -1,8 +1,8 @@
 build:
   docker:
-    backend: Dockerfile.backend
-    frontend: Dockerfile.front
-    dashboard: Dockerfile.dashboard
+    backend: Dockerfile.Dockerfile
+    frontend: Dockerfile.Dockerfile
+    dashboard: Dockerfile.Dockerfile
 run:
   backend: node index.js
   frontend: npm start
