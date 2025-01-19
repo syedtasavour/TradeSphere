@@ -87,9 +87,6 @@ MONGO_URI=your_mongodb_connection_string
 # JWT Secret Key
 JWT_SECRET=your_secret_key
 
-# Stock Market API Key
-STOCK_API_KEY=your_stock_api_key
-
 # Server Port
 PORT=5000
 ```
@@ -117,20 +114,6 @@ After setting up the environment variables, you can run the project locally.
 
 ---
 
-## API Endpoints
-
-The following are the key API endpoints provided by the backend (Express.js):
-
-| Method | Endpoint              | Description                             |
-|--------|-----------------------|-----------------------------------------|
-| GET    | `/api/stocks/:symbol`  | Fetch stock data for a specific symbol  |
-| POST   | `/api/auth/login`      | Log in a user                           |
-| POST   | `/api/auth/register`   | Register a new user                     |
-| GET    | `/api/portfolio`       | Get the user's portfolio                |
-| POST   | `/api/portfolio`       | Add stock to the user's portfolio       |
-| DELETE | `/api/portfolio/:id`   | Remove stock from the user's portfolio  |
-
----
 
 ## Contributing
 
