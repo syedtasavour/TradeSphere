@@ -6,6 +6,7 @@ import Education from "./Education.js";
 import OpenAccount from "../OpenAccount.js";
 import Hero from "./Hero";
 
+
 function HomePage() {
     return (
         <>
@@ -16,6 +17,7 @@ function HomePage() {
             <Pricing/>
             <Education/>
             <OpenAccount/>
+         
        
 
 
