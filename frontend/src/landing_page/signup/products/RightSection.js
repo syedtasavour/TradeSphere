@@ -1,5 +1,5 @@
 import React from "react";
-import { company_icon } from "../home/features";
+import { company_icon } from "../../home/features";
 
 function LeftSection({
   imgUrl,
