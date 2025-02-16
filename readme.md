@@ -18,6 +18,9 @@
 
 ---
 
+## 🌟 Show Your Support
+If you found this project helpful, give it a ⭐️!
+
 ## Features
 
 - **Real-time Stock Data**: Fetch live stock prices and historical data from third-party APIs.
@@ -152,4 +155,8 @@ For any questions or suggestions, feel free to reach out:
 ---
 
 Feel free to contribute by forking the repository and submitting pull requests!
+
+<div align="center">
+  <sub>Built with passion (and a lot of coffee) by Syed Tasavour.</sub>
+</div>
 
